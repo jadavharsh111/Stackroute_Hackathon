@@ -6,8 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./click.component.css']
 })
 export class ClickComponent implements OnInit {
-  msg = '';
-  nCnt = 0;
+
   check = false;
 
   constructor() { }
@@ -18,8 +17,7 @@ export class ClickComponent implements OnInit {
 // Click function to open game
   onclick(): void {
         this.check = true;
-        this.nCnt = this.nCnt + 1;
-        this.msg = 'Clicked: ' + this.nCnt;
+
 
   }
 
