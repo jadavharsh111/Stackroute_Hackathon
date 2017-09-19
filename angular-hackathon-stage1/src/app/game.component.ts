@@ -2,6 +2,7 @@ import { Component,OnInit } from '@angular/core';
 import { Observable } from 'rxjs/Rx';
 
 
+
 @Component({
     selector: 'game-view',
     template:`
@@ -16,8 +17,8 @@ export class GameComponent{
     div_newBlank : number;
     ticks: number = 0;
     
-    
-    // arr[0] =0;
+    arr = ['red','blue','green','black'];
+   
 
     
     

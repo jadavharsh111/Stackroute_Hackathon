@@ -1,0 +1,69 @@
+<!DOCTYPE>
+<html>
+<head>
+<style>
+table, th, td
+ {
+    border: 2px solid black;
+}
+
+#a, #b, #c , #d
+{
+  width: 150px;
+  height: 100px;
+}
+
+/* #a,#b,#c{
+  background: black;
+} */
+
+.tab{
+  margin: 30px 500px 30px 500px;
+}
+
+.timer {
+   border:1px #666666 solid;
+   width:190px;
+   height:50px;
+   line-height:50px;
+   font-size:36px;
+   font-family:"Courier New", Courier, monospace;
+   text-align:center;
+   margin:20px 540px 20px 540px;
+}
+
+</style>
+</head>
+<body>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.2.min.js"></script>
+    <div class="timer">
+        <span class="hour">00</span>:<span class="minute">00</span>:<span class="second">00</span>
+    </div>
+
+   
+<table class="tab">
+
+ <tr>
+    <th id="a" align="center"  [style.background-color]="color1" (click)="this.getBlankDiv(1);readColor($event)" >{{arr[0]}}</th>
+    <th id="b" align="center"  [style.background-color]="color2" (click)="this.getBlankDiv(2);readColor($event)">{{arr[1]}}</th>
+  </tr>
+
+ <tr>
+    <th id="c" align="center"  [style.background-color]="color3" (click)="this.getBlankDiv(4);readColor($event)">{{arr[2]}}</th>
+    <th id="d" align="center"  [style.background-color]="color4" (click)="this.getBlankDiv(3);readColor($event)">{{arr[3]}}</th>
+  </tr>
+ 
+
+
+</table>
+
+<p>Score : </p>
+
+
+
+   <button type="submit" align="center" value="Submit" >Submit</button>
+
+
+</body>
+</html>

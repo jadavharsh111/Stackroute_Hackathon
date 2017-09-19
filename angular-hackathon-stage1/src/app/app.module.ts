@@ -1,12 +1,15 @@
 import { GameComponent } from './game.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppComponent } from './app.component';
+import { ClickComponent } from './click/click.component';
+import { GridComponent } from './grid/grid.component';
 
 @NgModule({
   declarations: [
-    AppComponent,GameComponent
+    AppComponent,GameComponent,
+    ClickComponent,
+    GridComponent
   ],
   imports: [
     BrowserModule
