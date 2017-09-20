@@ -12,6 +12,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./modal.component.css']
 })
 export class ModalComponent implements OnInit {
+    headers: any;
  datacomp: Data [];
 
   constructor(private http: Http) { }
